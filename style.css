@@ -1,0 +1,70 @@
+body{
+    padding:5px 20px;
+}
+.darkmode{
+    background-color: rgb(23, 23, 23);
+    color:white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar{
+    display: flex;
+    gap:10px;
+}
+#navbar > a{
+    text-decoration: none;
+    color:rgb(23, 23, 23);
+    padding:5px;
+}
+
+.aHoverLight{
+    background-color:rgb(23, 23, 23);
+
+    border-radius: 5px;
+    padding:5px;
+}
+.aHoverDark{
+    background-color:white !important;
+    border-radius: 5px!important;
+    padding:5px !important;
+}
+
+
+#sosmed{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.dark{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius:20px;
+    background-color:white;
+    cursor: pointer;
+}
+.darkHover{
+    background-color:black;
+    color:white ;
+}
+.darkModeHover{
+    color:black !important;
+    background-color:white !important;
+}
+
+.light{
+    display: flex;
+    align-items: center;
+    border: 2px solid white;
+    border-radius:20px;
+    background-color:black;
+    cursor: pointer;
+}
+.dark-img{
+    width: 20px;
+    height: 20px;
+}

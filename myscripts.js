@@ -6,6 +6,24 @@ const navbarA = document.querySelectorAll("#navbar > a");
 const instagram = document.querySelector(".instagram img");
 const github = document.querySelector(".github img");
 const email = document.querySelector(".email img");
+const Fig = document.querySelector(".footer-instagram img");
+const Fgit = document.querySelector(".footer-github img");
+const Femail = document.querySelector(".footer-email img"); 
+const em1= document.querySelector(".em1");
+const em2 = document.querySelector(".em2");
+const tombol= document.querySelector(".btnQuotes");
+
+const quotes=["A rose by any other name would smell as sweet.","All that glitters is not gold.","All the world’s a stage, and all the men and women merely players.","Ask not what your country can do for you; ask what you can do for your country.","Ask, and it shall be given you; seek, and you shall find."];
+
+const nameQuote =["William Shakespeare","William Shakespeare","William Shakespeare","John Kennedy","the Bible"];
+
+function kata(){
+    tombol.addEventListener("click",function(){
+        const random =Math.floor(Math.random()* (quotes.length));
+        em1.innerHTML= '"'+quotes[random]+'"';
+        em2.innerHTML='-'+nameQuote[random]+'-';
+    })
+}
 
 function navbarDark(){
     for (let i = 0; i < navbarA.length; i++){
@@ -57,6 +75,37 @@ function aHoverLight(){
     }
 }
 
+function fIgHover(){
+    Fig.addEventListener("mouseover",function(){
+        Fig.classList.add("fIg");
+        Fig.src="assets/image/instagram.png"
+    })
+    Fig.addEventListener("mouseout",function(){
+        Fig.classList.remove("fIg");
+        Fig.src="assets/image/ig-outline.png"
+    })
+}
+function fGitHover(){
+    Fgit.addEventListener("mouseover",function(){
+        Fgit.classList.add("fGit");
+        Fgit.src="assets/image/github (1).png"
+    })
+    Fgit.addEventListener("mouseout",function(){
+        Fgit.classList.remove("fGit");
+        Fgit.src="assets/image/github-outline.png"
+    })
+}
+function fEmailHover(){
+    Femail.addEventListener("mouseover",function(){
+        Femail.classList.add("fEmail");
+        Femail.src="assets/image/email.png"
+    })
+    Femail.addEventListener("mouseout",function(){
+        Femail.classList.remove("fEmail");
+        Femail.src="assets/image/email-outline.png";
+    })
+}
+
 
 darkBtn.addEventListener("mouseover",function(){
     darkBtn.classList.add("darkHover");
@@ -93,7 +142,10 @@ function lightBtnHover(){
     })
 }
 
-
+fIgHover();
+fGitHover();
+fEmailHover();
+kata();
 darkBtn.addEventListener("click",function(){
     body.classList.toggle("darkmode")
     if(body.classList=="darkmode"){
@@ -108,6 +160,9 @@ darkBtn.addEventListener("click",function(){
         github.src="assets/image/github (1).png";
         email.src="assets/image/email.png";
         aHoverDark();
+        fIgHover();
+        fGitHover();
+        fEmailHover();
         
     }
     else{
@@ -122,5 +177,9 @@ darkBtn.addEventListener("click",function(){
         github.src="assets/image/github-dark.png";
         email.src="assets/image/email-dark.png";
         aHoverLight();
+        fIgHover();
+        fGitHover();
+        fEmailHover();
     }
 });
+

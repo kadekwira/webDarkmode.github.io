@@ -1,14 +1,18 @@
 body{
-    padding:5px 20px;
+    margin:0;
+    background-image: linear-gradient(to left bottom, #ffffff, #f0f5ff, #d4efff, #aceaff, #7ce7ff, #62ddfc, #42d2fa, #00c8f8, #00b1ff, #0097ff, #0078ff, #1c4ffc);
+    font-family: 'Poppins',sans-serif;
+
 }
 .darkmode{
-    background-color: rgb(23, 23, 23);
-    color:white;
+    background-image: linear-gradient(to top, #555857, #414344, #2f3030, #1d1d1e, #080808);
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:10px 20px;
+    
 }
 
 #navbar{
@@ -23,7 +27,6 @@ header{
 
 .aHoverLight{
     background-color:rgb(23, 23, 23);
-
     border-radius: 5px;
     padding:5px;
 }
@@ -44,7 +47,7 @@ header{
     align-items: center;
     border: 2px solid black;
     border-radius:20px;
-    background-color:white;
+    background-color: white;
     cursor: pointer;
 }
 .darkHover{
@@ -68,3 +71,114 @@ header{
     width: 20px;
     height: 20px;
 }
+
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    background-color: white;
+    border-radius: 30px;
+    padding:10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    height:400px;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+}
+.avatar img{
+    width:100px;
+    height:100px;
+    border-radius:100px;
+    padding:3px;
+    align-self: center;
+    border: 4px solid #3f9fcb;
+}
+.name-status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+    gap:10px;
+}
+.name{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+.status{
+    font-size: 1 rem;
+    font-weight:bold;
+}
+.quotes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+}
+.btnQuotes{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background-color: #0097ff;
+    color: #fff;
+    padding:15px;
+    border-radius: 20px;
+    margin-top:50px;
+}
+
+/* akhir main */
+
+/* footer */
+footer{
+    display: flex;
+    justify-content:space-between;
+    background-color:rgb(255, 255, 255);
+    margin-top: 85px;
+    padding:10px 20px;
+}
+.footer-brand{
+    font-size:1.2rem;
+    font-weight:bold; ;
+}
+.akun{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.footer-instagram img{
+    border:1px solid rgb(8, 154, 217);
+    border-radius:20px;
+    padding:5px;
+}
+.footer-github img{
+    border:1px solid black;
+    border-radius:20px;
+    padding:5px;
+}
+.footer-email img{
+    border:1px solid rgb(215, 5, 180);
+    border-radius:20px;
+    padding:5px;
+}
+
+.fIg{
+    background-color:rgb(8, 154, 217);
+    border-radius:20px;
+}
+.fGit{
+    background-color:black;
+    border-radius:20px;
+}
+.fEmail{
+    background-color:rgb(215, 5, 180);
+    border-radius:20px;
+}
+/* akhir footer */
